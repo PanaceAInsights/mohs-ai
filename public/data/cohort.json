@@ -1,0 +1,68 @@
+{
+  "n_total": 408,
+  "n_ge13": 195,
+  "n_lt13": 213,
+  "pct_ge13": 47.8,
+  "mean_age": 68.5,
+  "sd_age": 12.9,
+  "pct_male": 57.8,
+  "pct_bcc": 90.0,
+  "pct_scc": 10.0,
+  "pct_head_neck": 93.4,
+  "pct_h_zone": 71.6,
+  "pct_m_zone": 24.0,
+  "pct_l_zone": 4.4,
+  "pct_recurrent": 31.1,
+  "pct_aggressive": 61.0,
+  "effects": {
+    "tumour_area": {
+      "mean_ge13": 6.26,
+      "mean_lt13": 0.76,
+      "cohens_d": 0.958
+    },
+    "tumour_size_x": {
+      "mean_ge13": 26.35,
+      "mean_lt13": 9.17,
+      "cohens_d": 1.225
+    },
+    "tumour_size_y": {
+      "mean_ge13": 24.64,
+      "mean_lt13": 8.7,
+      "cohens_d": 1.101
+    },
+    "age": {
+      "mean_ge13": 71.03,
+      "mean_lt13": 66.12,
+      "cohens_d": 0.389
+    },
+    "recurrent_v": 0.284,
+    "body_zone_v": 0.232,
+    "aggressive_v": 0.176
+  },
+  "zones": {
+    "H": {
+      "n": 292,
+      "mean_sections": 9.0,
+      "mean_area_cm2": 2.09,
+      "pct_ge13": 41.4,
+      "mean_stages": 2.96,
+      "sections_per_stage": 2.98
+    },
+    "M": {
+      "n": 98,
+      "mean_sections": 12.3,
+      "mean_area_cm2": 5.57,
+      "pct_ge13": 59.2,
+      "mean_stages": 2.72,
+      "sections_per_stage": 4.6
+    },
+    "L": {
+      "n": 18,
+      "mean_sections": 15.7,
+      "mean_area_cm2": 12.55,
+      "pct_ge13": 88.9,
+      "mean_stages": 2.11,
+      "sections_per_stage": 8.58
+    }
+  }
+}

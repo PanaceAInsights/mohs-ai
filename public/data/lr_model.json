@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "model": "LogisticRegression",
+  "metrics": {
+    "cv_auc_mean": 0.896,
+    "cv_auc_sd": 0.029,
+    "test_auc": 0.884
+  },
+  "numericFeatures": [
+    "Age",
+    "Tumour_Size_X",
+    "Tumour_Size_Y",
+    "Tumour_Area_cm2"
+  ],
+  "categoricalFeatures": [
+    "Sex",
+    "See_Do",
+    "Experience",
+    "Recurrent",
+    "Tumour_Stats",
+    "Body_Site",
+    "Body_Zone",
+    "Laterality",
+    "Unit",
+    "Aggressive_Histopathology",
+    "Biopsy",
+    "Smoking"
+  ],
+  "numeric": {
+    "Age": {
+      "mean": 67.96625766871166,
+      "sd": 12.999366293468553
+    },
+    "Tumour_Size_X": {
+      "mean": 17.153374233128833,
+      "sd": 15.870674744175489
+    },
+    "Tumour_Size_Y": {
+      "mean": 16.512269938650306,
+      "sd": 16.772700112996336
+    },
+    "Tumour_Area_cm2": {
+      "mean": 3.347868085338534,
+      "sd": 6.103133618089377
+    }
+  },
+  "categorical": {
+    "Sex": [
+      "0",
+      "1"
+    ],
+    "See_Do": [
+      "0",
+      "1"
+    ],
+    "Experience": [
+      "0",
+      "1"
+    ],
+    "Recurrent": [
+      "0",
+      "1"
+    ],
+    "Tumour_Stats": [
+      "1",
+      "2"
+    ],
+    "Body_Site": [
+      "1",
+      "2"
+    ],
+    "Body_Zone": [
+      "1",
+      "2",
+      "3"
+    ],
+    "Laterality": [
+      "1",
+      "2",
+      "3"
+    ],
+    "Unit": [
+      "CHEEK",
+      "EAR",
+      "EYE",
+      "FOREHEAD ",
+      "NOSE",
+      "OTHER",
+      "SCALP",
+      "TEMPLE",
+      "TRUNK"
+    ],
+    "Aggressive_Histopathology": [
+      "0",
+      "1"
+    ],
+    "Biopsy": [
+      "0",
+      "1"
+    ],
+    "Smoking": [
+      "0",
+      "1",
+      "UKN",
+      "UNK "
+    ]
+  },
+  "featureNames": [
+    "num__Age",
+    "num__Tumour_Size_X",
+    "num__Tumour_Size_Y",
+    "num__Tumour_Area_cm2",
+    "cat__Sex_0",
+    "cat__Sex_1",
+    "cat__See_Do_0",
+    "cat__See_Do_1",
+    "cat__Experience_0",
+    "cat__Experience_1",
+    "cat__Recurrent_0",
+    "cat__Recurrent_1",
+    "cat__Tumour_Stats_1",
+    "cat__Tumour_Stats_2",
+    "cat__Body_Site_1",
+    "cat__Body_Site_2",
+    "cat__Body_Zone_1",
+    "cat__Body_Zone_2",
+    "cat__Body_Zone_3",
+    "cat__Laterality_1",
+    "cat__Laterality_2",
+    "cat__Laterality_3",
+    "cat__Unit_CHEEK",
+    "cat__Unit_EAR",
+    "cat__Unit_EYE",
+    "cat__Unit_FOREHEAD ",
+    "cat__Unit_NOSE",
+    "cat__Unit_OTHER",
+    "cat__Unit_SCALP",
+    "cat__Unit_TEMPLE",
+    "cat__Unit_TRUNK",
+    "cat__Aggressive_Histopathology_0",
+    "cat__Aggressive_Histopathology_1",
+    "cat__Biopsy_0",
+    "cat__Biopsy_1",
+    "cat__Smoking_0",
+    "cat__Smoking_1",
+    "cat__Smoking_UKN",
+    "cat__Smoking_UNK "
+  ],
+  "weights": [
+    0.338767,
+    0.813026,
+    0.916952,
+    1.03433,
+    0.335738,
+    -0.337737,
+    -0.372777,
+    0.370778,
+    0.010655,
+    -0.012654,
+    -0.629272,
+    0.627273,
+    -0.374238,
+    0.372239,
+    -0.099127,
+    0.097128,
+    0.227152,
+    0.140404,
+    -0.369556,
+    0.062206,
+    0.106487,
+    -0.170692,
+    -0.075896,
+    0.678005,
+    -0.597435,
+    0.571719,
+    -0.606209,
+    -1.215347,
+    0.560215,
+    1.052504,
+    -0.369556,
+    -0.49035,
+    0.488351,
+    0.415199,
+    -0.417198,
+    -0.39609,
+    0.472763,
+    0.799576,
+    -0.878247
+  ],
+  "intercept": 1.755032,
+  "manuscriptThresholdCm2": 1.5
+}

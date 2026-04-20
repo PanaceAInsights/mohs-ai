@@ -1,0 +1,989 @@
+{
+  "summary": {
+    "importance": [
+      {
+        "feature": "Tumour_Area_cm2",
+        "value": 0.0941
+      },
+      {
+        "feature": "Tumour_Size_X",
+        "value": 0.0819
+      },
+      {
+        "feature": "Tumour_Size_Y",
+        "value": 0.0761
+      },
+      {
+        "feature": "Unit",
+        "value": 0.0697
+      },
+      {
+        "feature": "Recurrent",
+        "value": 0.0584
+      },
+      {
+        "feature": "Aggressive",
+        "value": 0.045
+      },
+      {
+        "feature": "Age",
+        "value": 0.0304
+      },
+      {
+        "feature": "Body",
+        "value": 0.0115
+      },
+      {
+        "feature": "Laterality",
+        "value": 0.0108
+      },
+      {
+        "feature": "Sex",
+        "value": 0.0068
+      },
+      {
+        "feature": "Smoking",
+        "value": 0.0066
+      },
+      {
+        "feature": "See",
+        "value": 0.0062
+      },
+      {
+        "feature": "Experience",
+        "value": 0.0034
+      },
+      {
+        "feature": "Biopsy",
+        "value": 0.0031
+      },
+      {
+        "feature": "Tumour",
+        "value": 0.0022
+      }
+    ],
+    "baseline": 0.47854294478527626
+  },
+  "cases": [
+    {
+      "features": {
+        "Age": 69.0,
+        "Tumour_Size_X": 4.0,
+        "Tumour_Size_Y": 5.0,
+        "Tumour_Area_cm2": 0.15707963267948966,
+        "Sex": "0",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "2",
+        "Unit": "NOSE",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Recurrent",
+          "value": 0.1285
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.084
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.0768
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.0659
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0493
+        },
+        {
+          "feature": "Unit",
+          "value": -0.0479
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 85.0,
+        "Tumour_Size_X": 6.0,
+        "Tumour_Size_Y": 5.0,
+        "Tumour_Area_cm2": 0.23561944901923446,
+        "Sex": "0",
+        "See_Do": "1",
+        "Experience": "0",
+        "Recurrent": "0",
+        "Tumour_Stats": "2",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "1",
+        "Unit": "NOSE",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.0883
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0781
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.0704
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.0675
+        },
+        {
+          "feature": "Unit",
+          "value": -0.0668
+        },
+        {
+          "feature": "See",
+          "value": 0.0554
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 78.0,
+        "Tumour_Size_X": 27.0,
+        "Tumour_Size_Y": 21.0,
+        "Tumour_Area_cm2": 4.453207586463532,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "0",
+        "Recurrent": "0",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "2",
+        "Laterality": "1",
+        "Unit": "OTHER",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "0",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.1737
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": 0.1535
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": 0.1313
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.0306
+        },
+        {
+          "feature": "Unit",
+          "value": -0.0252
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.0208
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 84.0,
+        "Tumour_Size_X": 13.0,
+        "Tumour_Size_Y": 14.0,
+        "Tumour_Area_cm2": 1.4294246573833562,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "0",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "1",
+        "Unit": "EAR",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.0798
+        },
+        {
+          "feature": "Unit",
+          "value": 0.0769
+        },
+        {
+          "feature": "Age",
+          "value": 0.0549
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.0535
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0489
+        },
+        {
+          "feature": "Aggressive",
+          "value": 0.0397
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 43.0,
+        "Tumour_Size_X": 40.0,
+        "Tumour_Size_Y": 47.0,
+        "Tumour_Area_cm2": 14.765485471872028,
+        "Sex": "0",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "2",
+        "Laterality": "2",
+        "Unit": "FOREHEAD ",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "1"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.1304
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": 0.127
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": 0.1179
+        },
+        {
+          "feature": "Unit",
+          "value": 0.0381
+        },
+        {
+          "feature": "Recurrent",
+          "value": 0.0347
+        },
+        {
+          "feature": "Age",
+          "value": -0.0237
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 82.0,
+        "Tumour_Size_X": 10.0,
+        "Tumour_Size_Y": 8.0,
+        "Tumour_Area_cm2": 0.6283185307179586,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "0",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "1",
+        "Unit": "NOSE",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Aggressive",
+          "value": -0.0934
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.0727
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0688
+        },
+        {
+          "feature": "Unit",
+          "value": -0.0621
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.0583
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.0538
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 64.0,
+        "Tumour_Size_X": 2.0,
+        "Tumour_Size_Y": 3.0,
+        "Tumour_Area_cm2": 0.047123889803846894,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "0",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "2",
+        "Unit": "EYE",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.0947
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.0876
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0726
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.0693
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.0579
+        },
+        {
+          "feature": "Age",
+          "value": -0.0222
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 88.0,
+        "Tumour_Size_X": 10.0,
+        "Tumour_Size_Y": 19.0,
+        "Tumour_Area_cm2": 1.4922565104551517,
+        "Sex": "0",
+        "See_Do": "1",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "2",
+        "Unit": "EAR",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Size_Y",
+          "value": 0.0972
+        },
+        {
+          "feature": "Recurrent",
+          "value": 0.0726
+        },
+        {
+          "feature": "Unit",
+          "value": 0.0688
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.0584
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0502
+        },
+        {
+          "feature": "Age",
+          "value": 0.0291
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 82.0,
+        "Tumour_Size_X": 23.0,
+        "Tumour_Size_Y": 15.0,
+        "Tumour_Area_cm2": 2.7096236637211963,
+        "Sex": "0",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "2",
+        "Laterality": "3",
+        "Unit": "SCALP",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Recurrent",
+          "value": 0.0722
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": 0.065
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.0532
+        },
+        {
+          "feature": "Age",
+          "value": 0.028
+        },
+        {
+          "feature": "Aggressive",
+          "value": 0.0271
+        },
+        {
+          "feature": "Unit",
+          "value": 0.0246
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 75.0,
+        "Tumour_Size_X": 3.0,
+        "Tumour_Size_Y": 4.0,
+        "Tumour_Area_cm2": 0.09424777960769379,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "0",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "2",
+        "Unit": "NOSE",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Aggressive",
+          "value": 0.0892
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.0716
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.0583
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0456
+        },
+        {
+          "feature": "Age",
+          "value": 0.0453
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.041
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 66.0,
+        "Tumour_Size_X": 10.0,
+        "Tumour_Size_Y": 6.0,
+        "Tumour_Area_cm2": 0.4712388980384689,
+        "Sex": "0",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "2",
+        "Unit": "NOSE",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "0",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.1136
+        },
+        {
+          "feature": "Recurrent",
+          "value": 0.1133
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.075
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.072
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0685
+        },
+        {
+          "feature": "Unit",
+          "value": -0.0614
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 72.0,
+        "Tumour_Size_X": 10.0,
+        "Tumour_Size_Y": 12.0,
+        "Tumour_Area_cm2": 0.9424777960769378,
+        "Sex": "0",
+        "See_Do": "1",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "2",
+        "Unit": "EYE",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "0",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Recurrent",
+          "value": 0.142
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.0609
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0578
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.0568
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.0526
+        },
+        {
+          "feature": "See",
+          "value": 0.0364
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 59.0,
+        "Tumour_Size_X": 34.0,
+        "Tumour_Size_Y": 15.0,
+        "Tumour_Area_cm2": 4.005530633326987,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "0",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "2",
+        "Laterality": "1",
+        "Unit": "FOREHEAD ",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Size_X",
+          "value": 0.1331
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.0997
+        },
+        {
+          "feature": "Recurrent",
+          "value": 0.0563
+        },
+        {
+          "feature": "Unit",
+          "value": 0.0387
+        },
+        {
+          "feature": "Age",
+          "value": -0.0302
+        },
+        {
+          "feature": "Aggressive",
+          "value": 0.0194
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 61.0,
+        "Tumour_Size_X": 8.0,
+        "Tumour_Size_Y": 13.0,
+        "Tumour_Area_cm2": 0.8168140899333463,
+        "Sex": "0",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "0",
+        "Tumour_Stats": "2",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "3",
+        "Unit": "NOSE",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "1"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.087
+        },
+        {
+          "feature": "Smoking",
+          "value": 0.0598
+        },
+        {
+          "feature": "Unit",
+          "value": -0.0582
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.058
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.054
+        },
+        {
+          "feature": "Aggressive",
+          "value": 0.0501
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 90.0,
+        "Tumour_Size_X": 19.0,
+        "Tumour_Size_Y": 61.0,
+        "Tumour_Area_cm2": 9.102764713776425,
+        "Sex": "0",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "1",
+        "Unit": "EYE",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.1438
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": 0.1422
+        },
+        {
+          "feature": "Recurrent",
+          "value": 0.0626
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.0342
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": 0.029
+        },
+        {
+          "feature": "Age",
+          "value": 0.0212
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 63.0,
+        "Tumour_Size_X": 26.0,
+        "Tumour_Size_Y": 21.0,
+        "Tumour_Area_cm2": 4.288273972150068,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "2",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "1",
+        "Unit": "TEMPLE",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.1353
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": 0.1188
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": 0.1106
+        },
+        {
+          "feature": "Recurrent",
+          "value": 0.0556
+        },
+        {
+          "feature": "Unit",
+          "value": 0.0502
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.0283
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 65.0,
+        "Tumour_Size_X": 14.0,
+        "Tumour_Size_Y": 18.0,
+        "Tumour_Area_cm2": 1.9792033717615698,
+        "Sex": "0",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "0",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "2",
+        "Laterality": "2",
+        "Unit": "CHEEK",
+        "Aggressive_Histopathology": "0",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Size_Y",
+          "value": 0.1395
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": 0.1175
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0329
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.031
+        },
+        {
+          "feature": "Aggressive",
+          "value": -0.0284
+        },
+        {
+          "feature": "Unit",
+          "value": 0.0192
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 72.0,
+        "Tumour_Size_X": 10.0,
+        "Tumour_Size_Y": 16.0,
+        "Tumour_Area_cm2": 1.2566370614359172,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "1",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "1",
+        "Unit": "EAR",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Recurrent",
+          "value": 0.1301
+        },
+        {
+          "feature": "Unit",
+          "value": 0.0701
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0473
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": 0.0473
+        },
+        {
+          "feature": "Aggressive",
+          "value": 0.047
+        },
+        {
+          "feature": "Age",
+          "value": 0.027
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 60.0,
+        "Tumour_Size_X": 4.0,
+        "Tumour_Size_Y": 8.0,
+        "Tumour_Area_cm2": 0.25132741228718347,
+        "Sex": "0",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "0",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "1",
+        "Laterality": "2",
+        "Unit": "NOSE",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "UNK "
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.0807
+        },
+        {
+          "feature": "Aggressive",
+          "value": 0.0725
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.0557
+        },
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0393
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.0377
+        },
+        {
+          "feature": "Unit",
+          "value": -0.0282
+        }
+      ]
+    },
+    {
+      "features": {
+        "Age": 64.0,
+        "Tumour_Size_X": 10.0,
+        "Tumour_Size_Y": 10.0,
+        "Tumour_Area_cm2": 0.7853981633974483,
+        "Sex": "1",
+        "See_Do": "0",
+        "Experience": "1",
+        "Recurrent": "0",
+        "Tumour_Stats": "1",
+        "Body_Site": "1",
+        "Body_Zone": "2",
+        "Laterality": "2",
+        "Unit": "CHEEK",
+        "Aggressive_Histopathology": "1",
+        "Biopsy": "1",
+        "Smoking": "0"
+      },
+      "shap": [
+        {
+          "feature": "Tumour_Size_X",
+          "value": -0.0871
+        },
+        {
+          "feature": "Tumour_Area_cm2",
+          "value": -0.0865
+        },
+        {
+          "feature": "Tumour_Size_Y",
+          "value": -0.0792
+        },
+        {
+          "feature": "Recurrent",
+          "value": -0.046
+        },
+        {
+          "feature": "Aggressive",
+          "value": 0.0379
+        },
+        {
+          "feature": "Age",
+          "value": -0.0361
+        }
+      ]
+    }
+  ]
+}

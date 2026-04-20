@@ -1,0 +1,8 @@
+{
+  "cv_auc_mean": 0.895,
+  "cv_auc_sd": 0.032,
+  "test_auc": 0.892,
+  "test_acc": 0.829,
+  "test_f1": 0.821,
+  "brier": 0.13
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "model": "Stacking Ensemble (LR)",
+    "cv_auc_mean": 0.897,
+    "cv_auc_sd": 0.033,
+    "test_auc": 0.889,
+    "test_acc": 0.817,
+    "test_f1": 0.81,
+    "brier": 0.132
+  },
+  {
+    "model": "Random Forest",
+    "cv_auc_mean": 0.89,
+    "cv_auc_sd": 0.043,
+    "test_auc": 0.871,
+    "test_acc": 0.805,
+    "test_f1": 0.795,
+    "brier": 0.143
+  },
+  {
+    "model": "Extra Trees",
+    "cv_auc_mean": 0.868,
+    "cv_auc_sd": 0.046,
+    "test_auc": 0.859,
+    "test_acc": 0.78,
+    "test_f1": 0.78,
+    "brier": 0.153
+  },
+  {
+    "model": "HistGradientBoosting",
+    "cv_auc_mean": 0.87,
+    "cv_auc_sd": 0.037,
+    "test_auc": 0.851,
+    "test_acc": 0.744,
+    "test_f1": 0.734,
+    "brier": 0.197
+  },
+  {
+    "model": "LightGBM",
+    "cv_auc_mean": 0.858,
+    "cv_auc_sd": 0.048,
+    "test_auc": 0.836,
+    "test_acc": 0.744,
+    "test_f1": 0.741,
+    "brier": 0.205
+  },
+  {
+    "model": "XGBoost",
+    "cv_auc_mean": 0.859,
+    "cv_auc_sd": 0.032,
+    "test_auc": 0.829,
+    "test_acc": 0.72,
+    "test_f1": 0.716,
+    "brier": 0.212
+  },
+  {
+    "model": "SVM-RBF",
+    "cv_auc_mean": 0.89,
+    "cv_auc_sd": 0.026,
+    "test_auc": 0.897,
+    "test_acc": 0.829,
+    "test_f1": 0.821,
+    "brier": 0.126
+  },
+  {
+    "model": "Logistic Regression",
+    "cv_auc_mean": 0.896,
+    "cv_auc_sd": 0.029,
+    "test_auc": 0.884,
+    "test_acc": 0.805,
+    "test_f1": 0.795,
+    "brier": 0.135
+  },
+  {
+    "model": "MLP (1024-512-256-128-64)",
+    "cv_auc_mean": 0.888,
+    "cv_auc_sd": 0.028,
+    "test_auc": 0.913,
+    "test_acc": 0.854,
+    "test_f1": 0.846,
+    "brier": 0.119
+  }
+]
