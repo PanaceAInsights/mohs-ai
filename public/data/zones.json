@@ -1,0 +1,26 @@
+{
+  "H": {
+    "n": 292,
+    "meanSections": 9.02,
+    "meanAreaCm2": 2.09,
+    "meanStages": 2.96,
+    "pctGe13": 41.4,
+    "sectionsPerStage": 2.98
+  },
+  "M": {
+    "n": 98,
+    "meanSections": 12.34,
+    "meanAreaCm2": 5.57,
+    "meanStages": 2.72,
+    "pctGe13": 59.2,
+    "sectionsPerStage": 4.6
+  },
+  "L": {
+    "n": 18,
+    "meanSections": 15.72,
+    "meanAreaCm2": 12.55,
+    "meanStages": 2.11,
+    "pctGe13": 88.9,
+    "sectionsPerStage": 8.58
+  }
+}
