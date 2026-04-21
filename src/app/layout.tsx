@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ChatWidget } from "@/components/chat/chat-widget";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -74,6 +75,7 @@ export default function RootLayout({
               <main className="flex-1">{children}</main>
               <SiteFooter />
             </div>
+            <ChatWidget />
             <Toaster />
           </TooltipProvider>
         </ThemeProvider>
