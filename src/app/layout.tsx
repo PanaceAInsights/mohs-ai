@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://mohs.panacea-i.com",
+  ),
   title: {
     default: "MOHS AI — Predict ≥13 sections in Mohs surgery",
     template: "%s · MOHS AI",
@@ -40,6 +43,19 @@ export const metadata: Metadata = {
     "BCC",
     "SCC",
   ],
+  openGraph: {
+    title: "MOHS AI — Predict ≥13 sections in Mohs surgery",
+    description:
+      "30 ML algorithms trained on 408 procedures. Live predictor, SHAP explainability, and clinical tools for Mohs surgery planning.",
+    type: "website",
+    siteName: "MOHS AI",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MOHS AI",
+    description:
+      "Evidence-based ML for Mohs micrographic surgery planning.",
+  },
 };
 
 export const viewport: Viewport = {
@@ -71,8 +87,16 @@ export default function RootLayout({
         >
           <TooltipProvider delay={200}>
             <div className="flex min-h-screen flex-col">
+              <a
+                href="#main"
+                className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[60] focus:rounded-md focus:bg-primary focus:px-3 focus:py-1.5 focus:text-sm focus:text-primary-foreground"
+              >
+                Skip to content
+              </a>
               <SiteHeader />
-              <main className="flex-1">{children}</main>
+              <main id="main" className="flex-1">
+                {children}
+              </main>
               <SiteFooter />
             </div>
             <ChatWidget />

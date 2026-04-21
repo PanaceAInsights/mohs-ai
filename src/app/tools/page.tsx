@@ -4,6 +4,7 @@ import { OrScheduler } from "@/components/tools/or-scheduler";
 import { RevenueProjector } from "@/components/tools/revenue-projector";
 import { DefectEstimator } from "@/components/tools/defect-estimator";
 import { CaseSimilarity } from "@/components/tools/case-similarity";
+import { PrintButton } from "@/components/print-button";
 
 export const metadata = {
   title: "Clinical tools",
@@ -21,9 +22,12 @@ export default function ToolsPage() {
         >
           Operations · planning · analytics
         </Badge>
-        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Clinical tools
-        </h1>
+        <div className="flex items-start justify-between gap-3">
+          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Clinical tools
+          </h1>
+          <PrintButton label="Save as PDF" />
+        </div>
         <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
           Four micro-applications that translate the predictor into practice:
           theatre scheduling, revenue forecasting, wound-size planning, and

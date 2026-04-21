@@ -17,7 +17,7 @@ export function ChatWidget() {
   if (pathname === "/chat") return null;
 
   return (
-    <>
+    <div data-chat-widget>
       <button
         type="button"
         onClick={() => setOpen(true)}
@@ -71,6 +71,6 @@ export function ChatWidget() {
           </>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 }

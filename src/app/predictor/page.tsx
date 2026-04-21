@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { PredictorApp } from "@/components/predictor/predictor-app";
+import { PrintButton } from "@/components/print-button";
 import { headline } from "@/lib/manuscript-data";
 
 export const metadata = {
@@ -28,8 +29,8 @@ export default function PredictorPage() {
             breakdown — there is no server round-trip.
           </p>
         </div>
-        <div className="flex gap-6 text-right">
-          <div>
+        <div className="flex flex-wrap items-end gap-6">
+          <div className="text-right">
             <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
               CV AUC
             </p>
@@ -37,7 +38,7 @@ export default function PredictorPage() {
               {headline.cvAuc.toFixed(3)}
             </p>
           </div>
-          <div>
+          <div className="text-right">
             <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
               High-conf acc
             </p>
@@ -45,6 +46,7 @@ export default function PredictorPage() {
               {(headline.highConfidenceAccuracy * 100).toFixed(1)}%
             </p>
           </div>
+          <PrintButton label="Save as PDF" />
         </div>
       </header>
 
