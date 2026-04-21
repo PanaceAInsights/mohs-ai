@@ -1,0 +1,13 @@
+{
+  "model": "LinearRegression",
+  "intercept": -1.4653736752302962,
+  "coef_tumour_area": 1.7396142906177012,
+  "coef_stages": 1.7720320619343015,
+  "metrics": {
+    "r2": 0.522,
+    "mae": 7.336,
+    "n_train": 324,
+    "n_test": 82
+  },
+  "notes": "defect_area(cm\u00b2) \u2248 intercept + coef_tumour_area\u00b7tumour_area + coef_stages\u00b7stages. Tumour area uses the ellipse formula (\u03c0 \u00d7 X/2 \u00d7 Y/2) and must be in cm\u00b2. Serves clinical planning estimates only; actual defect is surgery-dependent."
+}

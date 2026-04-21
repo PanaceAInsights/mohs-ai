@@ -23,16 +23,37 @@ OUT = ROOT / "public" / "data" / "cases.json"
 
 
 def main() -> None:
+    import pandas as pd  # noqa: PLC0415
+    import numpy as np  # noqa: PLC0415
+
     df = load_data()
+    # Also grab defect fields from the original xlsx (not in load_data())
+    raw = pd.read_excel(
+        Path(__file__).resolve().parent.parent.parent / "MOHS_AI_400.xlsx",
+        sheet_name="Data",
+    )
+    df["Defect_Size_X"] = pd.to_numeric(raw["DEFECT SIZE 1 (mm)"], errors="coerce")
+    df["Defect_Size_Y"] = pd.to_numeric(raw["DEFECT SIZE 2 (mm)"], errors="coerce")
+    df["Defect_Area_cm2"] = (
+        np.pi * (df["Defect_Size_X"] / 2) * (df["Defect_Size_Y"] / 2) / 100
+    )
+
     zone_map = {1: "H", 2: "M", 3: "L"}
     type_map = {1: "BCC", 2: "SCC", 3: "Other"}
     cases = []
     for _, r in df.iterrows():
         zone = zone_map.get(int(r["Body_Zone"]), "?")
         ttype = type_map.get(int(r["Tumour_Stats"]), "Other")
+        defect_area = (
+            None
+            if pd.isna(r["Defect_Area_cm2"])
+            else round(float(r["Defect_Area_cm2"]), 3)
+        )
         cases.append({
             "zone": zone,
             "area": round(float(r["Tumour_Area_cm2"]), 3),
+            "sizeX": round(float(r["Tumour_Size_X"]), 2),
+            "sizeY": round(float(r["Tumour_Size_Y"]), 2),
             "sections": int(r["Sections"]),
             "stages": int(r["Stages"]),
             "type": ttype,
@@ -40,6 +61,8 @@ def main() -> None:
             "aggressive": bool(int(r["Aggressive_Histopathology"]) == 1),
             "unit": str(r["Unit"]),
             "age": int(r["Age"]),
+            "sex": "M" if int(r["Sex"]) == 1 else "F",
+            "defectArea": defect_area,
         })
     OUT.write_text(json.dumps(cases))
     kb = OUT.stat().st_size / 1024
