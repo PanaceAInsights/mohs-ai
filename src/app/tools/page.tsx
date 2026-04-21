@@ -8,7 +8,7 @@ import { CaseSimilarity } from "@/components/tools/case-similarity";
 export const metadata = {
   title: "Clinical tools",
   description:
-    "Multi-room OR day scheduler, MBS revenue projector, defect-size estimator, and case-similarity finder — all powered by the manuscript's model.",
+    "Multi-room procedure day scheduler, MBS revenue projector, defect-size estimator, and case-similarity finder — all powered by the manuscript's model.",
 };
 
 export default function ToolsPage() {
@@ -38,7 +38,7 @@ export default function ToolsPage() {
             className="flex-1 min-w-[120px] px-3 py-2 text-xs sm:text-sm"
           >
             <span className="text-base leading-none">🏥</span>
-            <span className="ml-1.5">OR Scheduler</span>
+            <span className="ml-1.5">Day Scheduler</span>
           </TabsTrigger>
           <TabsTrigger
             value="revenue"
@@ -68,11 +68,14 @@ export default function ToolsPage() {
             Multi-room Mohs day scheduler
           </h2>
           <p className="text-sm text-muted-foreground">
-            Input tomorrow's case list. The predictor estimates probability of
-            ≥13 sections and the number of stages for each. The simulator then
-            schedules a day for one surgeon rotating through up to six rooms,
-            accounting for 25-minute excisions, 40-minute pathology waits, and
-            30-minute closures. Watch the day end earlier as you add rooms.
+            Book tomorrow's Mohs list. Add each patient with name, MRN, tumour
+            size, and — if you know it — the time they'll arrive. The
+            predictor estimates probability of ≥13 sections and the likely
+            stage count per case. The simulator then schedules the day for one
+            surgeon rotating through up to six procedure rooms, respecting
+            arrival times, priority flags, and an optional lunch break. Click
+            "Suggest arrivals" to let the model tell each patient when to
+            arrive; export to CSV for the front desk.
           </p>
           <OrScheduler />
         </TabsContent>
