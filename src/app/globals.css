@@ -144,7 +144,13 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Subtle noise texture for hero backgrounds */
+/* Subtle noise texture for hero backgrounds.
+   Both the wrapper element and the ::before need pointer-events:none so
+   the texture never intercepts clicks on buttons sitting in the same
+   stacking context. */
+.grain {
+  pointer-events: none;
+}
 .grain::before {
   content: "";
   position: absolute;

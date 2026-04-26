@@ -91,7 +91,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(0.78_0.14_195/0.15),transparent_55%)]" />
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
         </div>
-        <div className="grain absolute inset-0" aria-hidden />
+        <div className="grain pointer-events-none absolute inset-0 -z-10" aria-hidden />
 
         <div className="mx-auto max-w-7xl px-4 pt-16 pb-20 sm:px-6 sm:pt-24 sm:pb-28">
           <div className="flex flex-col items-start gap-10 lg:flex-row lg:items-center lg:justify-between">
