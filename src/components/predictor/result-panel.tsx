@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { ProbabilityRing } from "./probability-ring";
 import { FactorBars } from "./factor-bars";
+import { EnsembleBreakdown } from "./ensemble-breakdown";
 import type { PatientInput } from "@/lib/model-types";
 
 export function ResultPanel({
@@ -137,6 +138,9 @@ export function ResultPanel({
         </div>
       </div>
 
+      {/* Ensemble breakdown */}
+      <EnsembleBreakdown prediction={prediction} />
+
       {/* Factors */}
       <div className="rounded-xl border border-border/60 bg-card/60 p-4">
         <div className="flex items-baseline justify-between pb-3">
@@ -159,25 +163,27 @@ function ConfidenceChip({
   confidence,
   distance,
 }: {
-  confidence: "high" | "borderline";
+  confidence: "high" | "borderline" | "split";
   distance: number;
 }) {
-  const high = confidence === "high";
+  const styles = {
+    high: "border-accent/40 bg-accent/10 text-accent",
+    borderline: "border-muted-foreground/30 bg-muted/40 text-muted-foreground",
+    split: "border-destructive/40 bg-destructive/10 text-destructive",
+  } as const;
+  const labels = {
+    high: "High confidence",
+    borderline: "Borderline",
+    split: "Models disagree",
+  } as const;
   return (
-    <Badge
-      variant="outline"
-      className={cn(
-        high
-          ? "border-accent/40 bg-accent/10 text-accent"
-          : "border-muted-foreground/30 bg-muted/40 text-muted-foreground",
-      )}
-    >
-      {high ? (
+    <Badge variant="outline" className={cn(styles[confidence])}>
+      {confidence === "high" ? (
         <CheckCircle2 className="mr-1 h-3 w-3" />
       ) : (
         <AlertCircle className="mr-1 h-3 w-3" />
       )}
-      {high ? "High confidence" : "Borderline"}{" "}
+      {labels[confidence]}{" "}
       <span className="ml-1 font-mono tabular-nums">·{distance.toFixed(2)}</span>
     </Badge>
   );

@@ -61,7 +61,9 @@ def main() -> None:
             ),
         ],
     )
-    base = LogisticRegression(max_iter=2000, random_state=RANDOM_STATE)
+    # Strong L2 regularisation (C=0.3) to prevent the per-category
+    # OneHotEncoded features from over-fitting in a small (n=408) cohort.
+    base = LogisticRegression(C=0.3, max_iter=2000, random_state=RANDOM_STATE)
     pipe = Pipeline([("prep", prep), ("clf", base)])
 
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)

@@ -135,7 +135,17 @@ def load_data() -> pd.DataFrame:
         df[col] = df[col].fillna(df[col].median())
     df["Smoking"] = df["Smoking"].fillna(df["Smoking"].mode()[0])
 
-    # Unit: string → collapsed ordinal (rare sites grouped as "Other")
+    # Strip whitespace + normalise mistyped values BEFORE bucketing so we
+    # don't end up with 'FOREHEAD' and 'FOREHEAD ' being treated as
+    # separate categories or 'UNK ' / 'UKN' as different smoking values.
+    df["Unit"] = df["Unit"].astype(str).str.strip().str.upper()
+    df["Smoking"] = df["Smoking"].astype(str).str.strip().str.upper()
+    df["Smoking"] = df["Smoking"].replace({"UKN": "U", "UNK": "U", "NAN": "U"})
+    # Coerce remaining numeric-looking values to clean strings
+    df.loc[df["Smoking"].isin({"0", "0.0"}), "Smoking"] = "0"
+    df.loc[df["Smoking"].isin({"1", "1.0"}), "Smoking"] = "1"
+
+    # Unit: collapse rare sites to OTHER
     top_units = df["Unit"].value_counts().head(8).index.tolist()
     df["Unit"] = df["Unit"].where(df["Unit"].isin(top_units), other="OTHER")
 

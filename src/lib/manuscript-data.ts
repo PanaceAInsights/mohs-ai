@@ -13,7 +13,7 @@ export const paper = {
   title:
     "Development and Validation of Machine Learning Models for Predicting 13 or More Sections in Mohs Micrographic Surgery",
   authors: ["Yagiz Alp Aksoy", "Simon Lee", "Gilberto Moreno-Bonilla"],
-  hospital: "The Skin Hospital, Sydney (Darlinghurst + Westmead)",
+  hospital: "a high-volume Mohs surgical centre, Sydney",
   period: "2012–2017",
   deploymentUrl: "https://mohs.panacea-i.com",
 } as const;

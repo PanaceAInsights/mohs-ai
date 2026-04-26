@@ -59,7 +59,7 @@ const SECTIONS = [
     href: "/chat",
     icon: Sparkles,
     title: "Ask MOHS AI",
-    desc: "Claude Sonnet answers patient-education questions and explains SHAP contributions in plain English.",
+    desc: "An AI assistant that answers patient-education questions and explains SHAP contributions in plain English.",
     tag: "AI assistant",
   },
 ] as const;
@@ -101,7 +101,7 @@ export default function Home() {
                 className="border-primary/30 bg-primary/5 text-primary"
               >
                 <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-                Published 2026 · The Skin Hospital, Sydney
+                Published 2026 · 408-patient Sydney cohort
               </Badge>
 
               <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">

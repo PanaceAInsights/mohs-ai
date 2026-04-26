@@ -83,7 +83,7 @@ export function ChatPanel({ compact = false }: { compact?: boolean }) {
       {/* context strip */}
       <div className="flex flex-wrap items-center gap-2 border-b border-border/60 px-4 py-2.5 text-[11px] text-muted-foreground">
         <Sparkles className="h-3.5 w-3.5 text-accent" />
-        <span>Claude Sonnet 4.6 · knows the manuscript</span>
+        <span>AI assistant · grounded in the manuscript</span>
         <Badge variant="secondary" className="ml-auto font-mono text-[10px]">
           {pageLabel}
         </Badge>
@@ -204,7 +204,7 @@ function EmptyState({ onPick }: { onPick: (p: string) => void }) {
       </span>
       <h3 className="mt-3 text-base font-medium">Ask MOHS AI</h3>
       <p className="mt-1 text-xs text-muted-foreground">
-        Claude Sonnet 4.6 grounded in the manuscript. Ask about predictions,
+        AI assistant grounded in the manuscript. Ask about predictions,
         clinical context, or Mohs surgery in general.
       </p>
       <div className="mt-4 grid gap-2 text-left">

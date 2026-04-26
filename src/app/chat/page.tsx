@@ -4,7 +4,7 @@ import { ChatPanel } from "@/components/chat/chat-panel";
 export const metadata = {
   title: "Ask MOHS AI",
   description:
-    "Claude Sonnet 4.6 grounded in the manuscript. Ask about predictions, clinical context, or patient education for Mohs surgery.",
+    "AI assistant grounded in the manuscript. Ask about predictions, clinical context, or patient education for Mohs surgery.",
 };
 
 export default function ChatPage() {
@@ -15,7 +15,7 @@ export default function ChatPage() {
           variant="outline"
           className="mb-3 border-accent/40 bg-accent/5 text-accent"
         >
-          AI assistant · Claude Sonnet 4.6 via Vercel AI Gateway
+          AI assistant · grounded in the manuscript
         </Badge>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
           Ask MOHS AI
