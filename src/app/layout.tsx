@@ -81,7 +81,7 @@ export default function RootLayout({
       <body className="min-h-full bg-background text-foreground">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
