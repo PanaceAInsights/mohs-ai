@@ -25,12 +25,12 @@ const PRESETS: { key: string; label: string; patch: Partial<PatientInput> }[] = 
   },
   {
     key: "large-recurrent",
-    label: "Large recurrent SCC, cheek",
+    label: "Large recurrent BCC, cheek",
     patch: {
       Age: 78,
       Sex: "1",
       Recurrent: "1",
-      Tumour_Stats: "2",
+      Tumour_Stats: "1",
       Unit: "CHEEK",
       Body_Zone: "2",
       Tumour_Size_X: 35,
