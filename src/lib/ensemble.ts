@@ -220,7 +220,7 @@ const FEATURE_LABELS: Record<string, string> = {
   Laterality: "Laterality",
   Unit: "Anatomical unit",
   Aggressive_Histopathology: "Aggressive histopathology",
-  Biopsy: "Biopsy method",
+  Biopsy: "Previous treatment method",
   Smoking: "Smoking",
 };
 

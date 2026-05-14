@@ -16,7 +16,7 @@ const LABELS: Record<string, string> = {
   Body: "Body zone",
   Body_Zone: "Body zone",
   Tumour_Stats: "Tumour type",
-  Biopsy: "Biopsy method",
+  Biopsy: "Previous treatment method",
   Laterality: "Laterality",
   Sex: "Sex",
   Experience: "Surgeon experience",

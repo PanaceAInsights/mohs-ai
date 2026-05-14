@@ -120,7 +120,7 @@ export function PatientForm({
           />
         </div>
         <Choice
-          label="Biopsy method"
+          label="Previous treatment method"
           value={value.Biopsy}
           options={[
             { v: "1", l: "Excisional" },

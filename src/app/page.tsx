@@ -68,7 +68,7 @@ const PIPELINE = [
   {
     icon: Database,
     title: "Pre-operative input",
-    desc: "12 variables a clinician already has: age, sex, tumour size X and Y, location, histology subtype, recurrence status, biopsy method.",
+    desc: "12 variables a clinician already has: age, sex, tumour size X and Y, location, histology subtype, recurrence status, previous treatment method.",
   },
   {
     icon: Workflow,
