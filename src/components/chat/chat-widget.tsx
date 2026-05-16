@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MessageSquarePlus, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { track } from "@vercel/analytics";
 import { cn } from "@/lib/utils";
 import { ChatPanel } from "./chat-panel";
 
@@ -20,7 +21,10 @@ export function ChatWidget() {
     <div data-chat-widget>
       <button
         type="button"
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setOpen(true);
+          track("chat_opened", { from: pathname });
+        }}
         aria-label="Open MOHS AI assistant"
         className={cn(
           "fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/90 px-4 py-2.5 text-sm shadow-lg backdrop-blur transition hover:border-primary/40 hover:text-primary",

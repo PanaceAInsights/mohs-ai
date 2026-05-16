@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { RotateCcw, Sparkles } from "lucide-react";
+import { track } from "@vercel/analytics";
 import { DEFAULT_PATIENT, type PatientInput } from "@/lib/model-types";
 import { predict } from "@/lib/model";
 import { PatientForm } from "./patient-form";
@@ -78,7 +79,10 @@ export function PredictorApp() {
               <button
                 key={p.key}
                 type="button"
-                onClick={() => setInput({ ...DEFAULT_PATIENT, ...p.patch })}
+                onClick={() => {
+                  setInput({ ...DEFAULT_PATIENT, ...p.patch });
+                  track("predictor_preset", { preset: p.key });
+                }}
                 className="rounded-md border border-border bg-background px-2.5 py-1 text-xs text-muted-foreground transition hover:border-primary/40 hover:bg-primary/5 hover:text-primary"
               >
                 <Sparkles className="mr-1 inline h-3 w-3" />

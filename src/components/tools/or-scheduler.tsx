@@ -11,6 +11,7 @@ import {
   Trash2,
   Zap,
 } from "lucide-react";
+import { track } from "@vercel/analytics";
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
@@ -209,6 +210,7 @@ export function OrScheduler() {
   };
 
   const exportCsv = () => {
+    track("scheduler_csv_export", { rooms, cases: cases.length });
     const rows = ["Room,Start,End,Patient,MRN,Case,Stages,P(≥13),Arrival,Wait (min)"];
     for (const pc of schedN.perCase) {
       const c = cases.find((x) => x.id === pc.id);
