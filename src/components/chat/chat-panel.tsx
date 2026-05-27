@@ -133,18 +133,40 @@ export function ChatPanel({ compact = false }: { compact?: boolean }) {
           </div>
         )}
 
-        {error && (
-          <div className="mt-4 flex items-start gap-2 rounded-lg border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
-            <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
-            <div>
-              <p className="font-medium">Chat is unavailable.</p>
-              <p className="text-destructive/80">
-                On Vercel, enable the AI Gateway for this project. For local dev
-                run <code className="font-mono">vercel env pull</code>.
-              </p>
+        {error && (() => {
+          const raw = error.message ?? "Chat is unavailable.";
+          // Pull any https:// URL out of the error so we can render it as a button
+          const urlMatch = raw.match(/https:\/\/[^\s)"'`]+/);
+          const upgradeUrl = urlMatch?.[0];
+          const message = upgradeUrl ? raw.replace(upgradeUrl, "").trim() : raw;
+          const isBillingError =
+            /credit|tier|upgrade|top.?up|quota|billing/i.test(raw);
+          return (
+            <div className="mt-4 flex flex-col gap-2 rounded-lg border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
+              <div className="flex items-start gap-2">
+                <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+                <div className="space-y-1">
+                  <p className="font-medium">
+                    {isBillingError
+                      ? "Assistant needs paid credits."
+                      : "Chat is unavailable."}
+                  </p>
+                  <p className="text-destructive/80">{message}</p>
+                </div>
+              </div>
+              {upgradeUrl && (
+                <a
+                  href={upgradeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="self-start rounded-md border border-destructive/40 bg-destructive/10 px-2.5 py-1 font-mono text-[11px] text-destructive transition hover:bg-destructive/20"
+                >
+                  Open Vercel billing →
+                </a>
+              )}
             </div>
-          </div>
-        )}
+          );
+        })()}
       </div>
 
       <form
